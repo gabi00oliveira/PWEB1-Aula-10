@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula10 - Formulário</title>
+</head>
+<body>
+    <div class="cd"> 
+        <h1 class="h1">Formulário de Cadastro</h1> 
+        <br><br>
+        <form action="">
+            <!-- label for identifica o id do input 
+                name -> utilizado para associar com o js 
+                placeholder -> exibe a informação
+                maxlenght -> tamanho da caixa do input 
+                autofocus required -> o cursor será posicionado no 
+                início do input-->
+            
+            <label for="lnome">Nome:</label>
+            <input type="text" name="inome" id="lnome" placeholder="Digite o seu nome"
+            maxlength="30" autofocus required>
+
+            <br><br>
+
+            <label for="ldtnasc">Data de nascimento: </label>
+            <input type="date" name="idtnasc" id="idtnasc"
+            min="1950-01-01" max="2024-01-01">
+            
+            <label for="iIdade">Idade:</label>
+            <input type="number" name="nIdade" id="lIdade"
+            min="14" max="70">
+
+            <label for="iMaior">Maior de Idade</label>
+            <input type="checkbox" name="nMaior" id="lMaior">
+
+            <br><br>
+
+            <label for="lhorarioentrevista">Horário da Entrevista:</label>
+            <input type="time" name="nhorarioentrevista" id="ihorarioentrevista">
+
+            <br><br>
+
+            <label for="lsitepessoal">Site Pessoal:</label>
+            <input type="url" name="isitepessoal" id="lsitepessoal"
+                value="https://br.pinterest.com/">
+
+            <br><br>
+
+            <label for="itelefone">Telefone:</label>
+            <input type="tel" name="itelefone" id="ltelefone" 
+            placeholder="99999-9999"
+            pattern="[0-9]{5}-[0-9]{4}">
+
+            <br><br>
+
+            <label for="iTempoExp">Tempo de Experiência:</label>
+            <input list="listaExperiencia">
+                <datalist id="listaExperiencia">
+                    <option value="Menos de um ano">Novato</option>
+                    <option value="Entre 2 e 5 anos">Pleno</option>
+                    <option value="Mais de 5 anos">Senior</option>
+                </datalist>
+                
+            <label for="IDataHoracioEntrevista">Data/Horário Entrevista:</label>
+            <input type="datetime-local" name="nDataHoracioEntrevista" 
+                id="lDataHoracioEntrevista">
+
+            <br><br>
+
+            <label for="lEmail">E-mail:</label>
+            <input type="email" name="nEmail" id="lEmail">
+
+            <br><br>
+
+            <label for="lUltimoEmprego">Data do último emprego: </label>
+            <input type="month" name="nUltimoEmprego" 
+                id="lUltimoEmprego">
+
+            <br><br>
+
+            <label for="lConhecimento">Conhecimento de Informática:</label>
+            <select name="iConhecimento" id="lConhecimento" multiple>
+                <option value="win">Windows</option>
+                <option value="word">Word</option>
+                <option value="excel">Excel</option>
+                <option value="html">Html</option>
+            </select>
+
+            <br><br>
+
+            <label for="lArquivo">Arquivo</label>
+            <input type="file" name="nArquivo" id="lArquivo" accept=".pdf">
+
+            <br><br>
+
+            <label for="iCor">Selecione uma Cor</label>
+            <input type="color" name="iCor" id="lCor">
+            
+            <br><br>
+            <label for="Isenha">Digite uma Senha:</label>
+            <input type="password" name="iSenha" id="lSenha">
+
+            <br><br>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+
+            <br><br>
+            
+                    
+
+
+        </form>
+    </div>
+
+    
+</body>
+</html>
